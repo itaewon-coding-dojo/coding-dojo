@@ -1,0 +1,16 @@
+{
+  "name": "int2str-csh-lyg",
+  "version": "1.0.0",
+  "description": "* 주어진 정수를 문자열로 변환한다. ex) 1234 => '1234'",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "jest": "^24.9.0"
+  }
+}
