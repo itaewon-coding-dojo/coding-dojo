@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="int2str.Int2strTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-30T13:20:34" hostname="hyeonhycBookPro.T-mobile.com" time="0.034">
+  <properties/>
+  <testcase name="정수를_문자열로_반환하기" classname="int2str.Int2strTest" time="0.031"/>
+  <testcase name="음수를_넣으면_에러발생시키" classname="int2str.Int2strTest" time="0.002"/>
+  <testcase name="정수의_마지막자리수를_문자열로_변환해서_가져오기" classname="int2str.Int2strTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
