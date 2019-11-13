@@ -8,79 +8,73 @@
     - 나머지 값을 배열에 담는다.
     - 10으로 나눴을때 몫이 0인경우 반복을 멈춘다.
     - String 변수에 반복문을 이용하여 배열에 거꾸로 담은 값들을 반대로 정렬하면서 String변수에 더해준다.
+
+    recursion 이용한 계획
+    - 입력값을 10으로 나눈 나머지 값을 구함.
+    - 입력값을 10으로 나눈 몫을 구한다.
+    - 위의 것을 반복한다. 끝나는 시점은 몫이 0일때
+
+
 */
 
 const getIntToStr = (inputInt) => {
-    const intToArray = intoArray(inputInt);
-    const intToString = arrayToString(intToArray);
 
-    return intToString;
+    const intToArray = insertDigitToArr(inputInt); // 1234 -> [4,3,2,1]
+    const arrayToString = arrayToStr(intToArray);
+
+    return arrayToString;
 };
 
-const getExtra = (input) => {
-
-    const extra = input % 10;
-
-    return extra;
-};
-
-const intoArray = (inputInt) => {
-
-    //1234 ,4
-    //123 ,3
-    //12 ,2
-    //1 ,1
-    const result = [];
-    let input = inputInt;
-    while (input != 0 ) {
-        const extra = parseInt(input % 10);
-        input = parseInt(input / 10);
-        result.unshift(extra);
-    }
-
-    return result;
-};
-
-
-
-const arrayToString = (inputArray) => {
+const restDivision = (inputInt) => {    // 1234 -> 4 , 123 -> 3
     
-    let result = "";
-
-    inputArray.forEach((v) => {
-        result += v;
-    });
+    const result = inputInt % 10
     return result;
 }
 
-const recursionIntToStr = () => {
+const insertDigitToArr = (inputInt) => {    // 1234 -> [4,3,2,1]
 
-    return '1234';
-};
+    let array = [];
+    //insertIntToArr(inputInt);   // 1234 -> [4] 123 -> [3] 
+    
+    while(inputInt != 0) {
+
+        array.push( restDivision(inputInt) );  // [4] [3] [2] [1]
+        inputInt = inputInt / 10;
+        inputInt = Math.floor(inputInt);
+    }
+
+    return array;
+}
+
+const arrayToStr = (inputArray) => {
+
+    reverseArray = inputArray.reverse();
+    let result = "";
+    reverseArray.forEach(value => {
+        result += value;
+    });
+
+    return result;
+}
 
 test('getIntToStr', () => {
     expect(getIntToStr(1234)).toBe('1234');
-    expect(getIntToStr(12345)).toBe('12345');
+    expect(getIntToStr(123)).toBe('123');
 });
 
-test('getExtra', () => {
-    expect(getExtra(1234)).toBe(4);
-    expect(getExtra(123)).toBe(3);
-    expect(getExtra(12)).toBe(2);
-
+test('restDivision', () => {
+    expect(restDivision(1234)).toBe(4);
+    expect(restDivision(123)).toBe(3);
 });
 
-test('intoArray', () => {
-    expect(intoArray(1234)).toEqual([1, 2, 3, 4]);
-    // expect(intoArray(123)).toEqual([1, 2, 3]);
+test('insertDigitToArr', () => {
+    expect(insertDigitToArr(1234)).toEqual([4,3,2,1]);
+    expect(insertDigitToArr(123)).toEqual([3,2,1]);
 });
 
-test('arrayToString', () => {
-    expect(arrayToString([1, 2, 3, 4])).toBe('1234');
-    expect(arrayToString([1, 2, 3])).toBe('123');
-});
-
-test.only('recursionIntToStr',() => {
-    expect(recursionIntToStr(1234)).toBe('1234');
-    expect(recursionIntToStr(123)).toBe('123');
-});
+test('arrayToStr', () => {
+    expect(arrayToStr([4,3,2,1])).toBe('1234');
+    expect(arrayToStr([3,2,1])).toBe('123');
+    expect(arrayToStr([2,1])).toBe('12');
+    
+})

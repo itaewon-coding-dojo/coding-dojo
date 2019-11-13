@@ -1,0 +1,14 @@
+{
+  "name": "reversestr",
+  "version": "1.0.0",
+  "description": "주어진 문자열을 띄어쓰기 단위로 뒤집어서 나열한다.",
+  "main": "reverseStr.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
