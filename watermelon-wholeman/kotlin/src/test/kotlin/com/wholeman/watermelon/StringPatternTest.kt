@@ -8,10 +8,10 @@ import org.junit.Test
  * Github : http://github.com/wholemann
  * E-Mail : wholeman.dev@gmail.com
  */
-fun odd(v: Int) = if (v % 2 === 0) "수" else "박"
+fun isEven(v: Int) = if (v % 2 === 0) "수" else "박"
 
 fun getStringPattern(n: Int): String {
-    return Array(n) { i -> odd(i) }.joinToString("")
+    return Array(n) { i -> isEven(i) }.joinToString("")
 }
 
 class StringPatternTest {
