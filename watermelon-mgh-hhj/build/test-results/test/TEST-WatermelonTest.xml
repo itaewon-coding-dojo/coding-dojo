@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WatermelonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T11:25:43" hostname="noahs-MBP.T-mobile.com" time="0.058">
+  <properties/>
+  <testcase name="길이만큼 패턴 리턴하기" classname="WatermelonTest" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
