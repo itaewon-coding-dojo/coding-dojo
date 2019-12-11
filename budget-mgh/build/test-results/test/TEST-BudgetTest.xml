@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BudgetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-11T12:27:51" hostname="noahs-MacBook-Pro.local" time="0.052">
+  <properties/>
+  <testcase name="예산 구하기" classname="BudgetTest" time="0.052"/>
+  <system-out><![CDATA[8
+6
+3
+-1
+-6
+8
+6
+3
+0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
