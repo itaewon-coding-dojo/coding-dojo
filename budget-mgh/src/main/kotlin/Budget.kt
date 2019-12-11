@@ -1,3 +1,4 @@
+
 fun SupportMaxDepartment(applyBudget: IntArray, budget: Int): Int {
     var count = 0;
     applyBudget.sortedArray().fold(budget, { acc, it ->
