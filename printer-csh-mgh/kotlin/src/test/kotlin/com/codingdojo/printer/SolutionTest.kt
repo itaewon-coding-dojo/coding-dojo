@@ -35,7 +35,7 @@ fun getPrintOrder(priorities: IntArray, location: Int): Int {
     return step(queue, location, 1)
 }
 
-fun <T : Pair<Int, Int>> step(queue: List<T>, target: Int, order: Int): Int =
+tailrec fun <T : Pair<Int, Int>> step(queue: List<T>, target: Int, order: Int): Int =
         when (queue.maxBy { it.second }) {
             queue.first() ->
                 if (queue.first().first == target) order
