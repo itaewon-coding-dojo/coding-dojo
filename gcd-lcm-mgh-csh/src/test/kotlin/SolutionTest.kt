@@ -54,6 +54,6 @@ tailrec fun getCommonDivisors(n: Int, divisor: Int = 1, result: List<Int> = list
     }
 
 
-fun <T : Int> getGcd(a: List<T>, b: List<T>) = a.asSequence().filter { b.contains(it) }.max()!!
+fun <T : Int> getGcd(a: List<T>, b: List<T>) = a.asSequence().filter { b.contains(it) }.max()?:1
 
 fun getLcm(n: Int, m: Int, gcm: Int) = (n * m / gcm)
