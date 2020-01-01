@@ -1,0 +1,17 @@
+{
+  "name": "gcd-lcm-lyg-ygb",
+  "version": "1.0.0",
+  "description": "문제",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
