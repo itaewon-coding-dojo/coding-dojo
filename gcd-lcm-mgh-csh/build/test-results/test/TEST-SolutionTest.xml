@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SolutionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-01T17:32:39" hostname="noahs-MacBook-Pro.local" time="0.069">
+  <properties/>
+  <testcase name="공약수들이 포함된 배열을 만든다" classname="SolutionTest" time="0.06"/>
+  <testcase name="최대 공약수와 최소 공배수 구하기" classname="SolutionTest" time="0.006"/>
+  <testcase name="최소 공배수 구하기" classname="SolutionTest" time="0.002"/>
+  <testcase name="최대 공약수 구하기" classname="SolutionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
