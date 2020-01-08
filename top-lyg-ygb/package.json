@@ -1,0 +1,17 @@
+{
+  "name": "top-lyg-ygb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "test": "^0.6.0"
+  }
+}
