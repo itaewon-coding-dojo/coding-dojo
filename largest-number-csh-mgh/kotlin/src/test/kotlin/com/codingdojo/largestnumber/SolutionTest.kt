@@ -4,16 +4,12 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 
 fun solution(numbers: IntArray): String =
-    when {
-        numbers.all { it == 0 } -> "0"
-        else -> numbers.sortedWith(MyComparator()).joinToString("")
-    }
-
-class MyComparator : Comparator<Int> {
-    override fun compare(o1: Int?, o2: Int?): Int {
-        return "${o2}${o1}".toInt().compareTo("${o1}${o2}".toInt())
-    }
-}
+        when {
+            numbers.all { it == 0 } -> "0"
+            else -> numbers.sortedWith(Comparator { o1, o2 ->
+                "$o2$o1".compareTo("$o1$o2")
+            }).joinToString("")
+        }
 
 class SolutionTest {
     @Test
