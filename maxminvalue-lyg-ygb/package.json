@@ -1,0 +1,17 @@
+{
+  "name": "maxminvalue-lyg-ygb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "maxminvalue-lyg-ygb.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^25.1.0"
+  }
+}
