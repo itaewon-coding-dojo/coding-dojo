@@ -1,14 +1,11 @@
-const solution = (clothes) => {
-  const counts = groupBy(clothes); 
-  return Object.keys(counts).reduce((total, cur) => (
-    total * (counts[cur] + 1)
-  ), 1) - 1;
-};
+const solution = (clothes) => 
+  Object.values(groupBy(clothes))
+    .reduce((total, cur) => total * (cur + 1), 1) - 1;
 
 const groupBy = (clothes) =>
-  clothes.reduce((counts, key) => ({
+  clothes.reduce((counts, [_, key]) => ({
       ...counts,
-      [key[1]]: counts[key[1]] ? counts[key[1]] + 1 : 1
+      [key]: counts[key] ? counts[key] + 1 : 1
   }), {});
 
 test('solution', () => {
