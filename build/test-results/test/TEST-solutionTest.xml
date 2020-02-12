@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="solutionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-05T12:48:01" hostname="taejinucBookPro.T-mobile.com" time="0.036">
+  <properties/>
+  <testcase name="compareExp test" classname="solutionTest" time="0.034"/>
+  <testcase name="calculateExp test" classname="solutionTest" time="0.002"/>
+  <testcase name="solution test" classname="solutionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
